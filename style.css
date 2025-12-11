@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    border-radius:30px;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px 15px 0px;
+}
+
+section{
+    position:relative;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+@keyframes animateBg {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.box{
+    border: 2px solid;
+    height:45%;
+    width: 22%;
+    border-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0px 30px 0px;
+}
+.input-box{
+  position: relative;
+  margin: 20px 0px;
+  width:310px;
+  border-bottom: 2px solid #fff;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -5px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.input-box input{
+    background: transparent;
+    border: none;
+    color:white;
+    outline: none;
+    font-size:1em;
+    padding: 0 35px 0 5px;
+    width: 100%;
+    height: 50px;
+}
+.input-box .icon{
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 57px;
+}
+.last{
+    text-align: center;
+  color: #fff;
+  margin: 5px 0 25px 40px;
+}
+.last p a{
+    margin: 2px 0px 2px px;
+    text-decoration: none;
+    color: white;
+}
+.last p a:hover{
+    text-decoration: underline;
+}
+.register a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.register a:hover{
+    text-decoration: underline;
+}
